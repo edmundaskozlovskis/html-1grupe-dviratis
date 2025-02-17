@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .container {
     width: 1200px;
     margin: auto;
@@ -7,10 +10,61 @@
     justify-content: space-between;
     align-items: center;
 }
+.col {
+    width: 50%;
+}
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 20px;
+}
+.menu a,
+#header-block a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    border: solid 1px black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.menu a:hover,
+#header-block a:hover {
+    background-color: black;
+    color: white;
+}
+.menu a:active,
+#header-block a:active {
+    background-color: silver;
+    border-color: silver;
+}
+#header-block,
+#info-block {
+    gap: 20px;
+    padding-top: 70px;
+}
+#header-block h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+#header-block h2 {
+    font-weight: 700;
+    color: silver;
+    font-size: 24px;
+}
+#header-block a {
+    margin-top: 16px;
+    display: inline-block;
+}
+#info-block img {
+    width: 100%;
+}
+#info-block h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#info-block p {
+    font-size: 13px;
 }

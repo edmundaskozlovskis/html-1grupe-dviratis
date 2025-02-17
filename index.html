@@ -2,21 +2,25 @@
 <html>
 <head>
     <title>Puslapis apie dviračius</title>
+    <style>
+        .mySlides {display:none;}
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="stylius.css">
 </head>
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row" id="navbox">
             <a href="#">
                 <img width="120" height="auto" src="https://edmundaskozlovskis.github.io/remote-lesson-1/images/istockphoto-854733622-612x612.jpg" alt="Logo paveikslėlis">
             </a>
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="#">Viršutinis blokas</a>
+                        <a href="#navbar">Viršutinis blokas</a>
                     </li>
                     <li>
-                        <a href="#">Informacija</a>
+                        <a href="#info-block">Informacija</a>
                     </li>
                     <li>
                         <a href="#">Charakteristika</a>
@@ -27,6 +31,149 @@
                 </ul>
             </div>
         </div>
+        <div class="row" id="header-block">
+            <div class="col">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit ipsa non.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit alias rem nostrum itaque expedita, recusandae totam iste quam magnam quia eligendi. Hic consequatur quisquam corporis placeat saepe aut maiores eius!</p>
+                <a href="#">Užsakymas</a>
+            </div>
+            <div class="col">
+                <div class="w3-content w3-display-container">
+                    <img class="mySlides" src="https://www.w3schools.com/W3CSS/img_snowtops.jpg" style="width:100%">
+                    <img class="mySlides" src="https://www.w3schools.com/W3CSS/img_lights.jpg" style="width:100%">
+                    <img class="mySlides" src="https://www.w3schools.com/W3CSS/img_mountains.jpg" style="width:100%">
+                    <img class="mySlides" src="https://www.w3schools.com/W3CSS/img_forest.jpg" style="width:100%">
+                  
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                  </div>
+            </div>
+        </div>
+        <div class="row" id="info-block">
+            <div class="col">
+                <img src="https://res.cloudinary.com/dc2u2hjhz/image/upload/w_566,h_566/v1621712847/Hyper-Bicycle-Men-s-29-Explorer-Mountain-Bike-Hard-Tail-Blue_3e93bdb8-f247-4ae2-898a-e03fe12a5472.c6b499258d504157384035a890ee022e_mqqjbj.webp" alt="Info block image">
+            </div>
+            <div class="col">
+                <div>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae laudantium eius libero voluptatem. Modi velit, ea quasi minus rerum, dolorem voluptatem omnis doloremque dolorum blanditiis vero in totam qui.</p>
+                </div>
+                <div>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae laudantium eius libero voluptatem. Modi velit, ea quasi minus rerum, dolorem voluptatem omnis doloremque dolorum blanditiis vero in totam qui.</p>
+                </div>
+                <div>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae laudantium eius libero voluptatem. Modi velit, ea quasi minus rerum, dolorem voluptatem omnis doloremque dolorum blanditiis vero in totam qui.</p>
+                </div>
+                <div>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae laudantium eius libero voluptatem. Modi velit, ea quasi minus rerum, dolorem voluptatem omnis doloremque dolorum blanditiis vero in totam qui.</p>
+                </div>
+                <div>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae laudantium eius libero voluptatem. Modi velit, ea quasi minus rerum, dolorem voluptatem omnis doloremque dolorum blanditiis vero in totam qui.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li>Bendra</li>
+                    <li>
+                        <p>Gamintojas</p>
+                        <p>Xiomi</p>
+                    </li>
+                    <li>
+                        <p>Isvaizda</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo commodi ullam pariatur, perferendis ut inventore autem corporis dicta aspernatur obcaecati accusantium! Eveniet ex ipsam accusamus illum laborum labore hic minus!</p>
+                    </li>
+                    <li>
+                        <p>Ratai</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <p>Elektros variklis</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Amortizacija</li>
+                    <li>
+                        <p>Amortizatoriu tipas</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quisquam cupiditate, rerum blanditiis aut quasi animi optio id dolorem in laborum eum veniam asperiores placeat quis quod maiores alias laboriosam.</p>
+                    </li>
+                    <li>
+                        <p>Sakes</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Valdymas</li>
+                    <li>
+                        <p>Vairas</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <p>Monetos</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quisquam cupiditate, rerum blanditiis aut quas.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Transmisija</li>
+                    <li>
+                        <p>Begiu skaicius</p>
+                        <p>7</p>
+                    </li>
+                    <li>
+                        <p>Pedalai</p>
+                        <p>Klasikiniai</p>
+                    </li>
+                    <li>
+                        <p>Priekinis perjungimas</p>
+                        <p>Viena zvaigzde</p>
+                    </li>
+                    <li>
+                        <p>Galinis perjungimas</p>
+                        <p>Shimano Turniy</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Stabdziai</li>
+                    <li>
+                        <p>Priekiniai</p>
+                        <p>Diskiniai mechaniniai</p>
+                    </li>
+                    <li>
+                        <p>Galiniai</p>
+                        <p>Diskiniai mechaniniai</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <img src="https://edmundaskozlovskis.github.io/remote-lesson-1/images/features-road-bike.webp" alt="Characteristic image">
+            </div>
+        </div>
     </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
 </body>
 </html>
