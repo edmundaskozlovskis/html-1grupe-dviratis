@@ -13,6 +13,12 @@ html {
 .col {
     width: 50%;
 }
+#navbox {
+    position: fixed;
+    width: 1200px;
+    background-color: white;
+    z-index: 2;
+}
 .menu ul {
     list-style-type: none;
     margin: 0;
@@ -43,7 +49,7 @@ html {
 #header-block,
 #info-block {
     gap: 20px;
-    padding-top: 70px;
+    padding-top: 110px;
 }
 #header-block h1 {
     font-size: 42px;
@@ -67,4 +73,43 @@ html {
 }
 #info-block p {
     font-size: 13px;
+}
+#characteristic-block {
+    padding-top: 110px;
+}
+#characteristic-block h4 {
+    margin-bottom: 30px;
+}
+#characteristic-block .row {
+    gap: 20px;
+}
+#characteristic-block .col:last-child {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+#characteristic-block .col img {
+    position: absolute;
+    height: 100%;
+    right: -76%;
+}
+#characteristic-block ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#characteristic-block ul li:first-child {
+    color: white;
+    background-color: black;
+    padding-left: 8px;
+}
+#characteristic-block ul li {
+    display: flex;
+}
+#characteristic-block ul li p {
+    width: 50%;
+    margin: 10px 0 0;
+}
+#characteristic-block ul li:last-child p {
+    margin-bottom: 10px;
 }
