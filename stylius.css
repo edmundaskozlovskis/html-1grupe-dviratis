@@ -113,3 +113,84 @@ html {
 #characteristic-block ul li:last-child p {
     margin-bottom: 10px;
 }
+#form-block {
+    margin-top: 70px;
+    position: relative;
+}
+#form-block form {
+    max-width: 420px;
+}
+#form-block form input[type='text'],
+#form-block form input[type='tel'] {
+    border: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    outline: none;
+    width: 100%;
+}
+#form-block .form-label-box {
+    display: flex;
+    gap: 20px;
+}
+#form-block .form-label-box input:checked + .form-box-bicycle {
+    display: block;
+    height: 400px;
+    overflow: hidden;
+}
+#form-block .form-radio-style {
+    width: 60px;
+    height: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#form-block .radio-silver {
+    background-color: silver;
+}
+#form-block .radio-red {
+    background-color: red;
+}
+#form-block .radio-white {
+    background-color: white;
+    border: 1px solid silver;
+}
+#form-block .form-label-box input {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+#form-block .form-label-box .form-box-bicycle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#form-block .form-label-box .form-box-bicycle img {
+    width: 600px;
+} 
+#form-block .form-label-box .form-box-bicycle p {
+    position: absolute;
+    top: 0;
+    border: 1px red solid;
+    border-radius: 50%;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+#form-block form button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: 1px black solid;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#form-block form button:hover {
+    background-color: red;
+}
