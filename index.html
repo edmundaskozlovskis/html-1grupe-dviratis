@@ -6,6 +6,7 @@
         .mySlides {display:none;}
     </style>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylius.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -16,20 +17,25 @@
                 <img width="120" height="auto" src="https://edmundaskozlovskis.github.io/remote-lesson-1/images/istockphoto-854733622-612x612.jpg" alt="Logo paveikslėlis">
             </a>
             <div class="menu">
-                <ul>
-                    <li>
-                        <a href="#header-block">Viršutinis blokas</a>
-                    </li>
-                    <li>
-                        <a href="#info-block">Informacija</a>
-                    </li>
-                    <li>
-                        <a href="#characteristic-block">Charakteristika</a>
-                    </li>
-                    <li>
-                        <a href="#form-block">Užklausa</a>
-                    </li>
-                </ul>
+                <div class="topnav" id="myTopnav">
+                    <ul>
+                        <li>
+                            <a href="#header-block">Viršutinis blokas</a>
+                        </li>
+                        <li>
+                            <a href="#info-block">Informacija</a>
+                        </li>
+                        <li>
+                            <a href="#characteristic-block">Charakteristika</a>
+                        </li>
+                        <li>
+                            <a href="#form-block">Užklausa</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="row" id="header-block">
@@ -195,7 +201,9 @@
                 <button type="submit">Uzsakyti</button>
             </form>
         </div>
-        <div id="footer">
+    </div>
+    <div id="footer">
+        <div class="container">
             <div class="row">
                 <div class="col">
                     <a href="#">Konfidencialumas</a>
@@ -232,6 +240,15 @@
             x[i].style.display = "none";  
           }
           x[slideIndex-1].style.display = "block";  
+        }
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
     </script>
 </body>
